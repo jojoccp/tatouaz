@@ -1,0 +1,904 @@
+@font-face {
+    font-family: Monograms;
+    src: url(fonts/MonogramsToolbox.ttf);
+    font-family: Caligo;
+    src: url(fonts/font_Caligo1.0.ttf);
+}
+
+body {
+    background-color: rgb(64, 0, 0);
+    font-family: Caligo;
+    margin: 0;
+}
+
+
+/*------------------------------------------------CABEÇALHO------------------------------------------------------*/
+
+#cabecalho {
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    color: white;
+    text-align: justify;
+}
+
+#navegacao {
+    width: 50%;
+    height: 15px;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    left: 55px;
+}
+
+#navegacao ul {
+    margin: 0;
+    background-color: black;
+    list-style: none;
+}
+
+#navegacao ul li {
+    display: inline;
+}
+
+#navegacao ul li a {
+    padding: 5px 10px;
+    display: inline-block;
+    color: rgb(255, 225, 225);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#navegacao ul li a:hover {
+    color: rgb(191, 0, 0);
+}
+
+
+/*-------------------------------------------ATÉ AQUI O CABEÇALHO--------------------------------------------------*/
+
+
+/*--------------------------------------------------LOGO-----------------------------------------------------------*/
+
+#lugarlogo {
+    background-color: black;
+    width: 100%;
+    height: 155px;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+}
+
+
+/*-----------------------------------------------------ATÉ AQUI LOGO------------------------------------------------*/
+
+
+/*--------------------------------------------------------SLIDE-----------------------------------------------------*/
+
+#slide {
+    width: 100%;
+    height: 800px;
+    text-align: auto;
+    margin: auto;
+}
+
+.slide {
+    width: 100%;
+    height: 800px;
+    opacity: 0.9;
+}
+
+
+/*------------------------------------------------------ATÉ AQUI SLIDE----------------------------------------------*/
+
+
+/*---------------------------------------------------------SEÇÃO 1- UM POUCO SOBRE NÓS---------------------------------------------------*/
+
+#secao1 {
+    background-color: rgb(64, 0, 0);
+    width: 100%;
+    height: 310px;
+}
+
+hr {
+    border-radius: 50%;
+    color: rgb(124, 0, 0);
+}
+
+.sobre_nos_texto {
+    width: 70%;
+    height: 80px;
+}
+
+.sobre_nos_imagem {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    top: -220px;
+    left: 1050px;
+}
+
+p {
+    margin-left: 30px;
+    margin-right: 40px;
+    text-align: justify;
+    color: rgb(255, 225, 225);
+    font-size: 25px;
+}
+
+h2 {
+    margin-left: 30px;
+    margin-right: 40px;
+    text-align: justify;
+    color: rgb(255, 225, 225);
+    font-family: Caligo;
+    font-size: 40px;
+}
+
+
+/*-------------------------------------------ATÉ AQUI SEÇÃO 1- UM POUCO SOBRE NÓS-------------------------------------*/
+
+
+/*--------------------------------------------------SEÇÃO 2- FUNCIONÁRIOS---------------------------------------------*/
+
+#secao2 {
+    background-color: rgb(64, 0, 0);
+    width: 100%;
+    height: 400px;
+    margin-right: 10px;
+}
+
+#funcionario1 {
+    width: 15%;
+    height: 250px;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+#funcionario2 {
+    width: 15%;
+    height: 250px;
+    position: relative;
+    top: -230px;
+    left: 360px;
+}
+
+#funcionario3 {
+    width: 15%;
+    height: 250px;
+    position: relative;
+    top: -480px;
+    left: 690px;
+}
+
+#funcionario4 {
+    width: 15%;
+    height: 250px;
+    position: relative;
+    top: -730px;
+    left: 1025px;
+}
+
+.funcionario {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+
+/*  MODAL FUNCIONARIOS */
+
+.modalF1 {
+    position: fixed;
+    top: -205px;
+    right: 15;
+    bottom: 0;
+    left: 280px;
+    font-family: Caligo;
+    color:white;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+#abrirModalF1 {
+    width: 650px;
+    height: 260px;
+    margin: auto;
+    
+}
+
+.modalF1:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalF1>div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #fff;
+}
+
+.fecharF1 {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+}
+
+.modalF2 {
+    position: fixed;
+    top: -205px;
+    right: 15;
+    bottom: 0;
+    left: 610px;
+    font-family: caligo;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+#abrirModalF2 {
+    width: 650px;
+    height: 260px;
+    margin: auto;
+}
+
+.modalF2:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalF2>div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #fff;
+}
+
+.fecharF2 {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+}
+
+.modalF3 {
+    position: fixed;
+    top: -205px;
+    right: 15;
+    bottom: 0;
+    left: 0px;
+    font-family: caligo;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+#abrirModalF3 {
+    width: 650px;
+    height: 260px;
+    margin: auto;
+}
+
+.modalF3:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalF3>div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #fff;
+}
+
+.fecharF3 {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+}
+
+.modalF4 {
+    position: fixed;
+    top: -205px;
+    right: 15;
+    bottom: 0;
+    left: 340px;
+    font-family: caligo;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+#abrirModalF4 {
+    width: 650px;
+    height: 260px;
+    margin: auto;
+}
+
+.modalF4:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalF4>div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #fff;
+}
+
+.fecharF4 {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+}
+
+
+/*--------------------------------------------- ATÉ AQUI SEÇÃO2- FUNCIONARIOS ------------------------------------- */
+
+
+/*--------------------------------------------------- SEÇÃO3- DIFERENCIAIS -----------------------------------------*/
+
+#secao3 {
+    background-color: rgb(64, 0, 0);
+    width: 100%;
+    height: 250px;
+    text-align: justify;
+    color: white;
+}
+
+
+/*---------------------------------------------- ATÉ AQUI SEÇÃO3- DIFERENCIAIS --------------------------------------*/
+
+
+/*------------------------------------------------------ SEÇAO 4- TRABALHOS ---------------------------------------- */
+
+#secao4 {
+    background-color: rgb(64, 0, 0);
+    width: 100%;
+    height: 750px;
+}
+
+.trabalhos {
+    width: 80%;
+    height: 250px;
+    border-radius: 45px;
+    position: relative;
+}
+
+#tatuagem1 {
+    top: 10px;
+    left: 200px;
+}
+
+#tatuagem2 {
+    top: -240px;
+    left: 450px;
+}
+
+#tatuagem3 {
+    top: -490px;
+    left: 700px;
+}
+
+#tatuagem4 {
+    top: -1020px;
+    left: 200px;
+}
+
+#tatuagem5 {
+    top: -1270px;
+    left: 450px;
+}
+
+#tatuagem6 {
+    top: -1520px;
+    left: 700px;
+}
+
+#tatuagem7 {
+    top: -2240px;
+    left: 956px;
+}
+
+#tatuagem8 {
+    top: -2270px;
+    left: 956px;
+}
+
+#piercing1 {
+    top: -510px;
+    left: 200px;
+}
+
+#piercing2 {
+    top: -760px;
+    left: 450px;
+}
+
+#piercing3 {
+    top: -1010px;
+    left: 700px;
+}
+
+#piercing4 {
+    top: -2260px;
+    left: 956px;
+}
+
+.img {
+    width: 20%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+
+/*---------------------------------------------ATÉ AQUI SEÇAO 4- TRABALHOS ------------------------------------ */
+
+
+/*------------------------------------------------SEÇÃO 5- LOCALIZAÇÃO------------------------------------------*/
+
+#secao5 {
+    background-color: rgb(64, 0, 0);
+    width: 100%;
+    height: 250px;
+    text-align: justify;
+    color: white;
+}
+
+#localizacao {
+    background-color: white;
+    width: 20%;
+    height: 155px;
+    position: relative;
+    top: 30px;
+    left: 390px;
+    border-radius: 50px;
+    text-align: center;
+    color: black;
+}
+
+.mapa {
+    border-radius: 50px;
+    width: 100%;
+}
+
+#truck>img {
+    width: 230px;
+    height: 225px;
+    position: relative;
+    top: -165px;
+    left: 690px;
+    border-radius: 50px;
+}
+
+
+/*------------------------------------------- ATÉ AQUI SEÇÃO 5- LOCALIZAÇÃO ------------------------------------------*/
+
+
+/* ------------------------------------------------------ RODAPÉ ---------------------------------------------------- */
+
+#rodape {
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    color: white;
+    text-align: justify;
+    float: left;
+}
+
+
+
+/*--------------------------------------------------------- DENUNCIA --------------------------------------------------*/
+
+#denuncia {
+    background-color: black;
+    width: 30%;
+    height: 100px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+#denuncia img {
+    width: 120px;
+    height: 120px;
+    margin-left: 100px;
+}
+
+
+/* ------------------------------------------------------------ MODAL ------------------------------------------------ */
+
+.modal {
+    position: fixed;
+    top: 10px;
+    right: 15;
+    bottom: 0;
+    left: 10px;
+    font-family: caligo;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+#abrirModal {
+    width: 350px;
+    height: 700px;
+    margin: auto;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal>div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #fff;
+}
+
+.fechar {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+}
+
+
+/*-------------------------------------------------------- FORMULÁRIO ------------------------------------------------ */
+
+#nomeformulario {
+    width: 320px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+#emailformulario {
+    width: 320px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+#telefoneformulario {
+    width: 320px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+#reclamacaoformulario {
+    margin-left: 8px;
+    width: 320px;
+    height: 200px;
+    resize: none;
+    font-size: 15px;
+}
+
+.textomodal {
+    font-size: 25px;
+    font-family: Caligo;
+}
+
+.modal>h3 {
+    font-family: Caligo;
+    font-size: 50px;
+}
+
+#botaoEnviar {
+    height: 50px;
+    width: 100px;
+    font-size: 25px;
+}
+
+
+/* -------------------------------------------------------- FIM - FORMULÁRIO ------------------------------------------*/
+
+
+/* -------------------------------------------------------- FIM - MODAL ---------------------------------------------- */
+
+
+/*------------------------------------------------------- ATÉ AQUI DENUNCIA -------------------------------------------*/
+
+
+/*------------------------------------------------------- DIREITOS AUTORAIS -------------------------------------------*/
+
+#direitos_autorais {
+    background-color: black;
+    width: 30%;
+    height: 100px;
+    position: relative;
+    top: -100px;
+    left: 465px;
+}
+
+#direitos {
+    font-size: 17px;
+    text-align: center;
+    position: relative;
+    left: 10px;
+}
+
+b {
+    font-size: 30px;
+    margin-left: 200px;
+    margin-top: -200px;
+}
+
+
+/*-------------------------------------------------- ATÉ AQUI DIREITOS AUTORAIS ----------------------------------------*/
+
+
+/*--------------------------------------------------------- REDES SOCIAIS ----------------------------------------------*/
+
+#redes_sociais {
+    background-color: black;
+    width: 30%;
+    height: 100px;
+    position: relative;
+    top: -170px;
+    left: 900px;
+}
+
+#redes_sociais>a {
+    text-decoration: none;
+}
+
+#instagram {
+    width: 15%;
+    height: 70px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+#facebook {
+    width: 15%;
+    height: 70px;
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+
+#twitter {
+    width: 15%;
+    height: 70px;
+    position: relative;
+    top: 10px;
+    left: 75px;
+}
+
+#youtube {
+    width: 15%;
+    height: 70px;
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+
+
+/*----------------------------------------- ATÉ AQUI REDES SOCIAIS----------------------------------------------------*/
+
+
+/*-------------------------------------------- ATÉ AQUI RODAPÉ -------------------------------------------------------*/
+
+
+/*-------------------------------------------------SERVIÇOS-----------------------------------------------------------*/
+
+
+.servicos p{
+    width: 100%;
+    height: 100px;
+    color: white;
+    font-size: 25px;
+    float: left;
+}
+
+.servicos > p {
+    width: 50%;
+    height: 100px;
+    margin-left:300px;
+    margin-top: -100px;
+    
+}
+
+.texto_servicos{
+    width: 70%;
+}
+
+hr {
+    clear: both;
+}
+
+strong {
+    font-size: 40px;
+    color: white;
+}
+
+
+/*--------------------------------------------ATÉ AQUI SERVIÇOS-------------------------------------------------------*/
+
+
+/*-------------------------------------------------CONTATOS-----------------------------------------------------------*/
+
+.contatos p{
+    width: 100%;
+    height: 100px;
+    color: white;
+    font-size: 25px;
+    float: left;
+}
+
+.contatos > p{
+    width: 70%;
+    height: 100px;
+    margin-left: 300px;
+    margin-top: -100px;
+    
+}
+
+hr {
+    clear: both;
+}
+
+strong {
+    font-size: 40px;
+    color: white;
+}
+
+
+.imagens_contatos{
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+/*--------------------------------------------FIM PÁGINA CONTATOS-----------------------------------------------------*/
+
+
+/*--------------------------------------------PÁGINA SOBRE NÓS--------------------------------------------------------*/
+
+#sobrenos {
+    width: 70%;
+    height: 550px;
+    color: white;
+    margin-left: 50px;
+    font-size: 25px;
+    float: left;
+}
+
+#missao {
+    width: 70%;
+    height: 850px;
+    color: white;
+    margin-left: 50px;
+    font-size: 25px;
+    float: left;
+}
+
+#palavradaceo {
+    width: 70%;
+    height: 700px;
+    color: white;
+    margin-left: 50px;
+    font-size: 25px;
+    float: left;
+}
+
+hr {
+    clear: both;
+}
+
+strong {
+    font-size: 40px;
+    color: white;
+}
+
+#imagemceo img {
+    width: 25%;
+    margin-top: -610px;
+    margin-right: 20px;
+    float: right;
+    border-radius: 45px;
+}
+
+
+/*--------------------------------------------FIM PÁGINA SOBRE NÓS-----------------------------------------------------*/
+
+
+/*------------------------------------------PÁGINA TRABALHE CONSOSCO---------------------------------------------------*/
+
+#formulario {
+    background-color: black;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 45px;
+    width: 40%;
+    height: 800px;
+    margin: auto;
+}
+
+#formulariotextarea {
+    width: 400px;
+    height: 200px;
+}

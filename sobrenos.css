@@ -1,0 +1,32 @@
+/*--------------------------------------------PÁGINA SOBRE NÓS--------------------------------------------------------*/
+
+.pagina_sobrenos {
+    width: 70%;
+    color: white;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+strong {
+    font-size: 40px;
+}
+
+.pagina_sobrenos_palavraceo {
+    margin-left: 65%;
+    margin-top: -30px;
+}
+
+.imagemceo {
+    width: 20%;
+    height: 300px;
+}
+
+#palavradoceo_esquerda {
+    clear: both;
+    float: left;
+}
+
+#palavradoceo_direita {
+    clear: both;
+    float: right;
+}
